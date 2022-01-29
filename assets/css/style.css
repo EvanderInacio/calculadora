@@ -1,0 +1,195 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*=============== VARIABLES ===========================*/
+:root{
+  --header-height: 3rem;
+
+  /*====== Colors ======*/
+  --hue-color: 240;
+
+  /*====== HSL color mode ======*/
+  --body-color: hsl(var(--hue-color), 40%, 30%);
+  --dark-color: hsl(var(--hue-color), 80%, 50%);
+  --dark-font-color: hsl(var(--hue-color), 1%, 100%);
+  --dark-icon-color: hsl(var(--hue-color), 1%, 1%);
+  --font-color-title: hsl(var(--hue-color), 50%, 100%);
+  --button-color: hsl(var(--hue-color), 50%, 100%);
+
+  /*====== fonts ======*/
+  --font-title: 2rem;
+}
+
+body.sun-theme{
+  /*====== Colors ======*/
+  --hue-color: 240;
+
+ /*====== HSL color mode ======*/
+  --body-color: hsl(var(--hue-color), 0%, 70%);
+  --dark-color: hsl(var(--hue-color), 70%, 60%);
+  --dark-font-color: hsl(var(--hue-color), 1%, 1%);
+  --dark-icon-color: hsl(var(--hue-color), 1%, 100%);
+  --font-color-title: hsl(var(--hue-color), 5%, 1%);
+  --button-color: hsl(var(--hue-color), 5%, 1%);
+  
+}
+
+body{
+  background-color: var(--body-color);
+  margin-top: var(--header-height);
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/*============ BASE ==============*/
+.github{
+  color: var(--font-color-title);
+  font-size: 1.5rem;
+  position: relative;
+  left: 85%;
+}
+.github:hover{
+  color: rgb(255, 0, 0);
+}
+
+#mode{
+ width: 80px;
+ height: 30px;
+ margin: 10px 20px;
+ background-color: var(--dark-color);
+ border-radius: 15px;
+ display: flex;
+ align-items: center;
+ position: relative;
+ margin-bottom: 5rem;
+}
+
+.dark_icon{
+  font-size: 1.3rem;
+  position: relative;
+  left: 2px;
+  top: 2px;
+  color: var(--dark-icon-color);
+}
+
+#inner-text {
+  font-size: 15px;
+  right: 10px;
+  color: var(--dark-font-color);
+  position: absolute;
+  top: 6px;
+  text-align: center;
+}
+
+#switch {
+  height: 26px;
+  width: 26px;
+  margin: 2px 2px;
+  background-color: var(--dark-font-color);
+  border-radius: 50%;
+}
+
+.switch-active {
+  transform: translateX(50px);
+}
+
+.inner-text-active {
+  transform: translateX(-26px);
+}
+
+.title{
+  margin-bottom: var(--header-height);
+  color: var(--font-color-title);
+  font-size: var(--font-title);
+}
+
+.button{
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background-color: var(--dark-color);
+  color: var(--dark-font-color);
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(21, 182, 194);
+}
+
+.calculate{
+  margin-bottom: 5rem;
+}
+
+.calculadora{
+ text-align: center; 
+}
+
+.description{
+  margin-bottom: 5rem;
+  text-align: center;
+  color: var(--font-color-title);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.img_calculate{
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.imc{
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.imc1{
+  text-align: center;
+}
+
+.divider{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 2px;
+  background: linear-gradient(to left, rgb(8, 228, 198), rgb(13, 46, 195));
+}
+
+.footer_copy{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--font-color-title);
+  margin-bottom: 1.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 994px){
+.container{
+  grid-template-columns: repeat(2, 1fr);
+}
+}
