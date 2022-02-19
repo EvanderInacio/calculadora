@@ -2,7 +2,7 @@
   Calculadora
 </h1>
   
-![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/calculadora/main/assets/images/calculadora.png)
+![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/calculadora/main/assets/images/calculator.png)
 
 ## 📝 Descrição 
 
