@@ -112,8 +112,7 @@ body {
 .button_github{
   display: flex;
   gap: 1rem;
-  left: -1rem;
-  top: 160%; 
+  left: 100%;
   position: relative;
 }
 
