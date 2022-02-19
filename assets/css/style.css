@@ -1,28 +1,26 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /*=============== VARIABLES ===========================*/
-:root{
+:root {
   --header-height: 3rem;
 
   /*====== Colors ======*/
   --hue-color: 240;
 
   /*====== HSL color mode ======*/
-  --body-color: hsl(var(--hue-color), 40%, 30%);
+  --body-color: hsl(var(--hue-color), 10%, 10%);
   --dark-color: hsl(var(--hue-color), 80%, 50%);
   --dark-font-color: hsl(var(--hue-color), 1%, 100%);
   --dark-icon-color: hsl(var(--hue-color), 1%, 1%);
@@ -33,59 +31,55 @@ a{
   --font-title: 2rem;
 }
 
-body.sun-theme{
+body.sun-theme {
   /*====== Colors ======*/
   --hue-color: 240;
 
- /*====== HSL color mode ======*/
-  --body-color: hsl(var(--hue-color), 0%, 70%);
+  /*====== HSL color mode ======*/
+  --body-color: hsl(var(--hue-color), 0%, 90%);
   --dark-color: hsl(var(--hue-color), 70%, 60%);
   --dark-font-color: hsl(var(--hue-color), 1%, 1%);
   --dark-icon-color: hsl(var(--hue-color), 1%, 100%);
   --font-color-title: hsl(var(--hue-color), 5%, 1%);
   --button-color: hsl(var(--hue-color), 5%, 1%);
-  
 }
 
-body{
+body {
   background-color: var(--body-color);
-  margin-top: var(--header-height);
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .grid {
   display: grid;
   gap: 2rem;
+} 
+
+.section {
+  padding: 2rem 0 4rem;
 }
 
-/*============ BASE ==============*/
-.github{
-  color: var(--font-color-title);
-  font-size: 1.5rem;
+/*============ BOTÃO ==============*/
+.dark{
+  position: absolute;
+  left:30%;
+}
+
+#mode {
+  width: 80px;
+  height: 30px;
+  margin: 10px 20px;
+  background-color: var(--dark-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
   position: relative;
-  left: 85%;
-}
-.github:hover{
-  color: rgb(255, 0, 0);
 }
 
-#mode{
- width: 80px;
- height: 30px;
- margin: 10px 20px;
- background-color: var(--dark-color);
- border-radius: 15px;
- display: flex;
- align-items: center;
- position: relative;
- margin-bottom: 5rem;
-}
-
-.dark_icon{
+.dark_icon {
   font-size: 1.3rem;
   position: relative;
-  left: 2px;
+  left: 1px;
   top: 2px;
   color: var(--dark-icon-color);
 }
@@ -115,32 +109,61 @@ body{
   transform: translateX(-26px);
 }
 
+.button_github{
+  display: flex;
+  gap: 1rem;
+  left: -1rem;
+  top: 160%; 
+  position: relative;
+}
+
+.github {
+  font-size: 1.5rem;
+  position: relative;
+  color: var(--dark-font-color);
+}
+
+.github:hover {
+  color: rgb(255, 0, 0);
+}
+
 /*========= home ===============*/
-.home{
-  margin-bottom: 13rem;
+.home {
   justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.home_data {
   text-align: center;
-}
-
-.home_data{
   margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
-h1{
-  font-size: 3rem;
+h1 {
+  font-size: 2rem;
+  font-style: italic;
   color: var(--font-color-title);
 }
 
-.opacity{
-  display: none;
-  margin-bottom: 2rem;
+.opacity {
+  width: 15rem;
+  margin-bottom: 3rem;
 }
 
-#img{
-  width: 20rem;
+#img {
+  width: 15rem;
+  display: none;
+  margin-top:2rem;
 }
 
 /*========== calculate ============*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   margin-bottom: var(--header-height);
   color: var(--font-color-title);
@@ -148,9 +171,9 @@ h1{
 }
 
 .button {
-  margin-bottom: 4rem;
-  padding: 1rem;
-  
+  display:inline-flex;
+  margin-bottom: 10px;
+  padding: 1.5rem;
   background-color: var(--dark-color);
   color: var(--dark-font-color);
   border-radius: 5px;
@@ -160,8 +183,20 @@ h1{
   background-color: rgb(21, 182, 194);
 }
 
+.button_web {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: var(--dark-color);
+  color: var(--dark-font-color);
+  border-radius: 5px;
+}
+
+.button_web:hover {
+  background-color: rgb(131, 21, 194);
+}
+
 .calculate {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .calculadora {
@@ -172,8 +207,6 @@ h1{
   margin-bottom: 5rem;
   text-align: center;
   color: var(--font-color-title);
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .img_calculate {
@@ -183,13 +216,16 @@ h1{
 
 /*======== imc ============*/
 .imc {
-  margin-bottom: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   justify-content: center;
 }
 
 .imc1 {
   text-align: center;
 }
+
+/*================ Footer =========================*/
 
 .divider {
   margin-top: 1rem;
@@ -217,63 +253,74 @@ h1{
 }
 
 @media (min-width: 768px) {
-  .home{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  h1{
+  h1 {
     font-size: 3rem;
   }
 
-  #img{
+   #img {
     width: 20rem;
+  }
+
+  .button {
+    display: inline;
+  }
+
+  .opacity{
+    width: 25rem;
   }
 
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .img_calculate{
+  .img_calculate {
     width: 15rem;
     margin-bottom: 5rem;
   }
 
-  .title{
+  .title {
     font-size: 2.5rem;
     margin-bottom: 4rem;
   }
 
-  .description{
-   font-size: 1.2rem;
+  .description {
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 994px) {
-  #img{
-    width: 35rem;
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    display: flex;
   }
 
-  h1{
+  #img {
+    width: 35rem;
+    display: block;
+  }
+
+  .opacity{
+    display: none;
+  }
+
+  h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
   }
 
-  .opacity{
-   display: inline-block;
-    width: 15rem;
-  }
-  
-  .img_calculate{
-    width: 25rem;
-    margin-bottom: 5rem;
-    height: 20rem;
+  .img_calculate {
+    width: auto;
+    margin-bottom: 2rem;
+    height: 30rem;
   }
 
-  .title{
+  .title {
     font-size: 2.5rem;
   }
 
-  .description{
-   font-size: 1.5rem;
+  .description {
+    font-size: 1.5rem;
   }
 }
