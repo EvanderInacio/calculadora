@@ -7,9 +7,9 @@ mode.onclick = function(){
   Switch_mode.classList.toggle('switch-active');
   Inner_text.classList.toggle('inner-text-active');
   if(document.body.classList.toggle('.sun-theme')){
-    Inner_text.innerHTML = 'Dark'
+    Inner_text.innerHTML = 'Light'
   }
   else{
-    Inner_text.innerHTML = 'Light'
+    Inner_text.innerHTML = 'Dark'
   }
 }
