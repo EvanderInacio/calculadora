@@ -41,28 +41,28 @@ body.sun-theme {
   --dark-font-color: hsl(var(--hue-color), 1%, 100%);
   --dark-icon-color: hsl(var(--hue-color), 1%, 1%);
   --font-color-title: hsl(var(--hue-color), 50%, 100%);
-  --button-color: hsl(var(--hue-color), 50%, 10
+  --button-color: hsl(var(--hue-color), 50%, 100%);
 }
 
 body {
   background-color: var(--body-color);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .grid {
   display: grid;
-  gap: 2rem;
-} 
+  gap: 1.5rem;
+}
 
 .section {
   padding: 2rem 0 4rem;
 }
 
 /*============ BOTÃO ==============*/
-.dark{
+.dark {
   position: absolute;
-  left:30%;
+  left: 30%;
 }
 
 #mode {
@@ -109,7 +109,7 @@ body {
   transform: translateX(-26px);
 }
 
-.button_github{
+.button_github {
   display: flex;
   gap: 1rem;
   left: 100%;
@@ -154,7 +154,7 @@ h1 {
 #img {
   width: 15rem;
   display: none;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 
 /*========== calculate ============*/
@@ -170,7 +170,7 @@ h1 {
 }
 
 .button {
-  display:inline-flex;
+  display: inline-flex;
   margin-bottom: 10px;
   padding: 1.5rem;
   background-color: var(--dark-color);
@@ -256,7 +256,7 @@ h1 {
     font-size: 3rem;
   }
 
-   #img {
+  #img {
     width: 20rem;
   }
 
@@ -264,7 +264,7 @@ h1 {
     display: inline;
   }
 
-  .opacity{
+  .opacity {
     width: 25rem;
   }
 
@@ -300,7 +300,7 @@ h1 {
     display: block;
   }
 
-  .opacity{
+  .opacity {
     display: none;
   }
 
@@ -308,14 +308,14 @@ h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
   }
-  
+
  .calculadora_description{
-   grid-template-columns: repeat(2, 1fr);
-   justify-content: center;
-   text-align: center;
-   display: flex;
-   flex-direction: row-reverse; 
- }
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse; 
+  }
 
   .img_calculate {
     order: 1;
@@ -341,10 +341,10 @@ h1 {
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .description {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
