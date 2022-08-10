@@ -1,14 +1,12 @@
 <h1 align="center">
-  Calculadora
+  Calculadora ➕
 </h1>
   
-![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/calculadora/main/assets/images/preview.png)
+![Resultado final do projeto]()
 
 ## 📝 Descrição 
 
-Uma calculadora simples, criada para fazer as operações básicas da matemática.
-E uma calculadora de IMC (Índice de Massa Corporal e é um parâmetro utilizado
-para saber se o peso está de acordo com a altura) 
+Uma calculadora, criada para fazer as operações básicas da matemática.
 
 ## 🚀 Tecnologias
 

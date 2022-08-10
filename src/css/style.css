@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto' sans-serif;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background: linear-gradient(to left, #4a0778, #630b9e, #3a04b8de, #4c03f6de );
+}
+
+.grid_container{
+  display: grid;
+  justify-content: center;  
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 5.7rem);
+  margin-bottom: 5rem;
+}
+
+.grid_container > button{
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: #eee;
+}
+
+.grid_container button:hover{
+  background-color: #eee;
+  color: #111;
+}
+
+.grid_container  .operator{
+  background: #4006c7de;
+}
+
+.grid_container .operator_result{
+  background: rgb(3, 87, 197);
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.grid_container > .output{
+  grid-column: 1 / -1;
+  background: #222; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap:break-word;
+  word-break: break-all;
+}
+
+.grid_container .output .previous-operand{
+  color: rgb(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.grid_container .output .current-operand{
+  color: white;
+  font-size: 2.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}

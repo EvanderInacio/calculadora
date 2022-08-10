@@ -1,86 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Calculadora</title>
+    <link rel="icon" href="./src/img/logo.svg">
+  </head>
 
-  <link rel="icon" href="assets/images/logo.svg">
-
-  <title>Calculadoras</title>
-</head>
-<body>
-
-<main>
-
-  <section class="dark">
-   <div id="mode">
-    <div id="switch"><i class="uil uil-lamp dark_icon"></i>
-      <label id="inner-text">Dark</label>
-    </div> 
-    
-          <div class="button_github">
-            <a href="https://github.com/EvanderInacio/calculadora" target="_blank" class="github"><i class="uil uil-github-alt"></i></a>
-            <a href="http://www.evanderinacio.com/" target="_blank" class="github"><i class="uil uil-brackets-curly"></i></a>
-          </div>
-   </div>
- </section>
-
-  <section class="home grid">
-    
-    <div class="home_data">
-      <h1>Calculadoras</h1>
-     <img class="opacity" src="assets/images/mobile.svg" alt="homem com celular"> <br>
-     <p class="description"> • Calculadora que realiza operações básicas do dia a dia <br> e que mede o seu indice de imc.</p>
-
-     <a class="button" href="#calculate">Simples</a>
-     <a class="button" href="#imc">IMC</a>
+  <body>
+    <div class="grid_container">
+      <div class="output">
+        <div data-previous class="previous-operand"></div>
+        <div data-current class="current-operand"></div>
+      </div>
+      <button data-all-clears class="span-two operator_atribute">AC</button>
+      <button data-delete class="operator_atribute">Del</button>
+      <button data-operator class="operator">/</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operator class="operator">*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operator class="operator">+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operator class="operator">-</button>
+      <button data-number class="span-two">.</button>
+      <button data-number>0</button>
+      <button data-equals class="operator_result">=</button>
     </div>
-    <img id="img" src="assets/images/desktop.svg" alt="homem fazendo exercicio">
-  </section>
-  
-  <section class="container grid">
-  <section class="calculate grid" id="calculate">
-    <div class="calculadora">
-     <div class="title">Calculadora simples</div>
-   
-      <div class="calculadora_description">
-       <img class="img_calculate" src="assets/images/Calculator-pana.svg" alt="calculadora">
-       <p class="description">A Calculadora oferece funções matemáticas simples. <br>
-       • Faça cálculos básicos, como adição, subtração, <br> multiplicação e divisão.</p>
-      </div>
-      
-     <a href="calculate.html" class="button_web">Acessar página <i class="uil uil-arrow-circle-right"></i></a>
-    </div>  
-  
-  </section>
 
-  <section class="imc grid" id="imc">
-    <div class="imc1">
-      <div class="title">Calculadora de IMC</div>
-     
-      <div class="imc_description">
-        <img class="img_calculate" src="assets/images/imc.svg" alt="imc">
-        <p class="description imc_text"> • IMC significa Índice de Massa Corporal e é um parâmetro utilizado <br> para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa.</p>
-      </div>
-    
-      <a href="#" class="button_web">Em Breve</a>
-     </div>
-  </section>
-
-</section>
-
-</main>
-
-<div class="divider"></div>
-
-<footer>
- <p class="footer_copy">&#169; Evander Inácio <i class="uil uil-coffee pont"></i></p>
-</footer>
-
-<script src="assets/js/main.js"></script>
-</body>
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>
